@@ -108,6 +108,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <App />
     </Provider>
   </React.StrictMode>,
+)
+
 
 STEP 7: Run the app:
 ==================
