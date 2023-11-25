@@ -97,12 +97,9 @@ STEP 6: Add index.tsx or main.tsx:
 
 import { Provider } from 'react-redux';
 import store from './app/store'; 
-
-<Provider store={store}> 
+<Provider store={store}>
   <App /> 
-</Provider> 
-
-
+</Provider>
 
 STEP 7: Run the app:
 ==================
