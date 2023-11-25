@@ -4,7 +4,8 @@ React, Redux Toolkit and TypeScript
 STEP 1: Create React app with Redux toolkit, TypeScript and Vite
 ================================================================
 npm create vite react-redux-ts-vite --template react-ts
-cd react-redux-ts-vite
+
+Go to file: cd react-redux-ts-vite
 
 STEP 2: Install Redux Toolkit and React-Redux:
 ==============================================
@@ -12,7 +13,6 @@ npm install @reduxjs/toolkit react-redux
 
 STEP 3: Create a Redux slice for managing the state. In the src folder, create a file named counterSlice.ts:
 ============================================================================================================
-// src/counterSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface CounterState {
@@ -42,7 +42,7 @@ export default counterSlice.reducer;
 
 STEP 4: Set up the Redux store. In the src folder, create a file named store.ts:
 ================================================================================
-// src/store.ts
+
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counterSlice';
 
@@ -60,7 +60,7 @@ export default store;
 
 STEP 5: Create a simple React component to interact with the Redux store. In the src folder, open App.tsx and replace its content with the following:
 =====================================================================================================================================================
-// src/App.tsx
+
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './counterSlice';
@@ -89,7 +89,7 @@ export default App;
 
 STEP 6: Add index.tsx or main.tsx:
 ==================================
-// src/index.tsx
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
