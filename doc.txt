@@ -60,7 +60,7 @@ export type AppDispatch = typeof store.dispatch;
 export default store;
 
 
-STEP 5: Create a simple React component to interact with the Redux store. In the src folder, open App.tsx and replace its content with the following:
+STEP 5: App.tsx and replace its content with the following:
 =====================================================================================================================================================
 
 import React from 'react';
