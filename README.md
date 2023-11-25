@@ -44,6 +44,7 @@ STEP 4: Set up the Redux store. In the src folder, create a file named store.ts:
 ================================================================================
 
 import { configureStore } from '@reduxjs/toolkit';
+
 import counterReducer from './counterSlice';
 
 const store = configureStore({
@@ -53,6 +54,7 @@ const store = configureStore({
 });
 
 export type RootState = ReturnType<typeof store.getState>;
+
 export type AppDispatch = typeof store.dispatch;
 
 export default store;
@@ -62,9 +64,13 @@ STEP 5: Create a simple React component to interact with the Redux store. In the
 =====================================================================================================================================================
 
 import React from 'react';
+
 import { useSelector, useDispatch } from 'react-redux';
+
 import { increment, decrement } from './counterSlice';
+
 import { RootState, AppDispatch } from './store';
+
 import './App.css';
 
 function App() {
