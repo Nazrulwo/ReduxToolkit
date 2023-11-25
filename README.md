@@ -80,7 +80,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Redux Toolkit + TypeScript + Vite Counter App</h1>
         <p>Count: {count}</p>
         <div>
           <button onClick={() => dispatch(increment())}>Increment</button>
@@ -97,10 +96,15 @@ STEP 6: Add index.tsx or main.tsx:
 ==================================
 
 import React from 'react';
+
 import ReactDOM from 'react-dom';
+
 import { Provider } from 'react-redux';
-import store from './app/store'; // Import your Redux store
-import App from './App'; // Import your main React component
+
+import store from './app/store'; 
+
+import App from './App'; 
+
 import './index.css';
 
 ReactDOM.render(
