@@ -115,3 +115,9 @@ STEP 7: Run the app:
 ==================
 npm run dev
 
+
+Or install React, Redux and TypeScript with "create-react-app":
+Install Redux toolkit: npx create-react-app my-redux-app --template redux-typescript
+navigate to the project folder: cd my-redux-app
+npm start
+
